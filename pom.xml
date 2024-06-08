@@ -94,7 +94,6 @@
 			<artifactId>docker-maven-plugin</artifactId>
 			<version>0.39.0</version>
 			<configuration>
-				<dockerHost>tcp://localhost:2375</dockerHost>
 				<verbose>true</verbose>
 				<images>
 					<image>
