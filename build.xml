@@ -136,7 +136,7 @@
   	  				</fileset>
   	  			</copy>
 
-  	  			<war destfile="build/T1.war" basedir="src" needxmlfile="false">
+  	  			<war destfile="target/T1.war" basedir="src" needxmlfile="false">
   	  			</war>
   	  		</target>
 </project>
