@@ -17,7 +17,7 @@ public class Login_View {
 		String sql="";
 try {
 			Class.forName("org.postgresql.Driver");
-            Connection connection = DriverManager.getConnection("jdbc:postgresql://host.docker.internal:1204/database1","postgres","123456789");
+            Connection connection = DriverManager.getConnection("jdbc:postgresql://host.docker.internal:5432/database","postgres","");
             Statement statement = connection.createStatement();
             ResultSet rs = statement.executeQuery(query);
             while(rs.next())

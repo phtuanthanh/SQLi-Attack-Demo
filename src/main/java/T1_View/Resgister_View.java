@@ -15,7 +15,7 @@ public class Resgister_View {
         int result = 0;
         try {
             Class.forName("org.postgresql.Driver");
-            Connection connection = DriverManager.getConnection("jdbc:postgresql://host.docker.internal:1204/database1","postgres","123456789");
+            Connection connection = DriverManager.getConnection("jdbc:postgresql://host.docker.internal:5432/database","postgres","");
             PreparedStatement statement = connection.prepareStatement(INSERT_USERS_SQL);
             statement.setString(1, e.getUserName());
             statement.setString(2, e.getPassWord());
