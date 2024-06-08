@@ -17,7 +17,7 @@ public class Login_View {
 		String sql="";
 try {
 			Class.forName("org.postgresql.Driver");
-            Connection connection = DriverManager.getConnection("jdbc:postgresql://localhost:5432/database","postgres","");
+            Connection connection = DriverManager.getConnection("jdbc:postgresql://172.17.0.3:5432/database","postgres","123456789");
             Statement statement = connection.createStatement();
             ResultSet rs = statement.executeQuery(query);
             while(rs.next())
